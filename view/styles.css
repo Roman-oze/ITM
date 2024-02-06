@@ -1,0 +1,265 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.row1{
+display: flex;
+flex-direction: row;
+justify-content:end;
+height: 75px;
+/* background-color: #0c4b52; */
+
+/* background-color: rgb(3, 32, 66); */
+background-color: #3498db;
+  padding: 10px;
+}
+.logoimg{
+ text-align: left;
+}
+.arrow{
+  text-align: center;
+}
+.header{
+height: 10px;
+}
+.pf{
+  height: 100%;
+  width: auto;
+  border-radius: 100%;
+
+}
+.nabi{
+display: flex;
+flex-direction: row;
+justify-content: end;
+align-content: center;
+
+}
+.navbar{
+display: flex;
+flex-direction: row;
+justify-content: end;
+align-content: center;
+
+}
+.navbar a {
+font-weight: bold;
+
+color: #ffffff;
+text-align: center;
+padding: 10px;
+text-decoration: none;
+
+}
+.navbar a:hover {
+font-weight: bold;
+color: rgb(0, 0, 0);
+border: 1px solid rgb(255, 255, 255);
+border-radius: 24px;
+border-width: auto;
+
+} 
+.apply{
+padding: 14px 20px;
+}
+.link{
+text-decoration: none;
+border: 1px solid black;
+border-radius: 24px;
+padding: 10px;
+background-color: #084d52;
+color: white;
+font-weight: bold;
+}
+.link:hover{
+text-decoration: none;
+border: 1px solid black;
+border-radius: 24px;
+padding: 10px;
+background-color: #fcfcfc;
+color: rgb(0, 0, 0);
+font-weight: bold;
+}
+.logo{
+height: 100px;
+width: 100px;
+}
+.btnn{
+border:1px solid black;
+border-radius: 24px;
+padding:auto;
+width: 50%;
+display: block;
+margin: auto;
+font-weight:bold;
+}
+
+.paragh{
+padding: 50px;
+text-align: center;
+}
+.clubhead{
+text-align: center;
+background-color: #000000;
+height: 50px;
+}
+.fa-download{
+font-size: 20px;
+padding: 10px;
+color: #0658d3;
+}
+
+.face{
+text-decoration: none;
+border-radius: 24px;
+background-color: blue;
+padding: 10px;
+font-weight: bold;
+color: #ddd;
+transition: transform 0.3s;
+}
+
+.face:hover{
+color: rgb(0, 0, 0);
+font-weight: bold;
+transform: scale(1.05);
+}
+.tube{
+text-decoration: none;
+border-radius: 24px;
+background-color: rgb(255, 0, 0);
+color: #ffffff;
+padding: 10px;
+font-weight: bold;
+transition: transform 0.3s;
+
+
+}
+.tube:hover{
+color: rgb(0, 0, 0);
+font-weight: bold;
+transform: scale(1.05);
+}
+.clubtxt{
+font-size: 36px;
+color:white;
+}
+.card {
+    margin-bottom: 20px;
+  }
+
+  .circular-image {
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 100px; /* Adjust the size as needed */
+    height: 100px; /* Adjust the size as needed */
+  }
+
+  .circular-image img {
+    width: 100%;
+    height: auto;
+    /* border: 2px solid rgb(20, 194, 218); */
+    border: 100%;
+  }
+
+  .card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: scale(1.05);
+  }
+  .img{
+      height: 100px;
+      width: 100px;
+  
+  }
+  
+  .faculty-card {
+         border-radius: 24px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          overflow: hidden;
+          max-width: 250px;
+          width: 100%;
+          background-color: #fcfcfcf8;
+          transition: transform 0.3s;
+          display: block;
+          margin: auto;
+          padding: 10px;
+          border:2px dotted #3498db;
+      }
+ 
+      .faculty-card:hover {
+          transform: scale(1.05);
+      }
+
+      .faculty-card img {
+          width: 100%;
+          height:100%;
+          object-fit:cover;
+
+          border-radius: 116%;
+      }
+
+      .faculty-card-content {
+          padding: 20px;
+      }
+
+      .faculty-card h2 {
+          margin-bottom: 10px;
+          color: #333;
+      }
+      .faculty-card h3{
+          margin-bottom: 10px;
+          color: #333;
+      }
+
+      .faculty-card p {
+          color: #777;
+          margin-bottom: 5px;
+      }
+
+      .faculty-card a {
+          text-decoration: none;
+          color: #3498db;
+          font-weight: bold;
+      }
+      h5{
+          color: rgb(8, 145, 54);
+      }
+      h4{
+        color: #463c3c;
+      }
+      .student-card {
+      overflow: hidden;
+      max-width: 250px;
+      width: 100%;
+      transition: transform 0.3s;
+      display: block;
+      margin: auto;
+      padding: 10px;
+  }
+
+  .student-card:hover {
+      transform: scale(1.05);
+  }
+      .head{
+      background-color: #3498db;
+   text-align: center;
+      color: #fff;
+      font-size: larger;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      border-radius: 10px;
+      }
+/* Add styles for other sections as needed */
+.photo{
+height: 100%;
+width: 100%;
+border-radius: 24px;
+}
+.back{
+height: 50px;
+  width: 50px;
+  border-radius: 100%;
+}

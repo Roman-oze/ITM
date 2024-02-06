@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+  <title>Hover Navigation Bar</title>
+  <style>
+    /* Basic styling for the navigation bar */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    #navbar {
+      background-color: #2474dd;
+      overflow: hidden;
+      width: 20%;
+      display: block;
+      margin: auto;
+    }
+    #navbar a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+      border: black;
+      display: block;
+      margin: auto;
+    }
+    #navbar a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+    .active {
+      background-color: #666;
+    }
+    /* Styling for the main content */
+    #content {
+      padding: 20px;
+    }
+    /* Hide all content sections except the active one */
+    .content-section {
+        display: block;
+    padding: 20px;
+    margin: auto;
+    
+    }
+    .content-section.active {
+        display: block;
+    padding: 20px;
+    margin: auto;
+    }
+    .fall{
+        text-decoration: none;
+        font-size: larger;
+        color: rgb(255, 255, 255);
+    }
+    .nav-link1{
+        background-color: rgb(250, 147, 13);
+        border: 1px solid black;
+    }
+    .nav-link2{
+        background-color: rgb(76, 0, 255);
+        border: 1px solid black;
+    }
+    .nav-link1:hover{
+        background-color: rgb(9, 226, 154);
+    }
+    .nav-link2:hover{
+        background-color: aquamarine;
+    }
+  </style>
+</head>
+<body>
+<div class="header ">
+    <h3 class=" border text-center bg-danger p-3">Routine</h3>
+</div>
+<div id="navbar">
+  <a href="#" class="nav-link bg-info active" onclick="showContent('spring')">Spring 2023</a>
+  <a href="#" class="nav-link bg-danger " onclick="showContent('fall')">Fall 2023</a>
+</div>
+
+<div id="content">
+  <div id="spring" class="content-section active">
+    <h2>Spring 2023 Routine</h2>
+    <p>This is the content for Spring 2023.</p>
+  </div>
+  <div id="fall" class="content-section ">
+    <h2>Fall 2023 Routine</h2>
+    <p  ><a class="fall" href="/model/ITM-Spring-2024-Routine.pdf">VIEW</a></p>
+  </div>
+</div>
+
+<script>
+  // Function to show the content based on the clicked navigation link
+  function showContent(section) {
+    var i;
+    var contentSections = document.getElementsByClassName("content-section");
+    var navLinks = document.getElementsByClassName("nav-link");
+    for (i = 0; i < contentSections.length; i++) {
+      contentSections[i].classList.remove("active");
+      navLinks[i].classList.remove("active");
+    }
+    document.getElementById(section).classList.add("active");
+    event.preventDefault(); // Prevent default behavior of the link
+    event.stopPropagation(); // Stop event propagation to parent elements
+  }
+</script>
+
+</body>
+</html>
