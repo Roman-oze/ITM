@@ -28,7 +28,7 @@ header a {
 
 /* Dark mode styles */
 body.dark-mode {
-  background-color: #383737;
+  background-color: #252525e0;
   color: #fff;
 }
 
@@ -46,6 +46,7 @@ color: rgb(0, 0, 0);
 }
 #mode-toggle{
   border-radius:50% ;
+  border: 1px double  black;
 }
 .covepage{
   background-image:linear-gradient(rgba(35, 190, 157, 0.698),rgba(26, 60, 155, 0.973) );
@@ -76,7 +77,7 @@ color: rgb(0, 0, 0);
 .navbar a {
   font-weight: bold;
   /* color: rgb(175, 199, 187); */
-  color: #1f1e1ee1;
+  color: #1e1e1fe1;
   text-align: center;
   padding: 14px 20px;
   text-decoration: none;
@@ -84,7 +85,7 @@ color: rgb(0, 0, 0);
 }
 .navbar a:hover {
   font-weight: bold;
-  color: rgb(9, 92, 247);
+  color: rgb(15, 143, 248);
   border-bottom:3px solid rgb(43, 41, 41);
   border-width: auto;
 } */
