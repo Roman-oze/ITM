@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light Mode Dark Mode</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Font Awesome for icons -->
+    <style>
+        /* Light mode styles */
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        header {
+            background-color: #fff;
+            color: #333;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header a {
+            text-decoration: none;
+            color: #333;
+            margin-right: 20px;
+        }
+
+        /* Dark mode styles */
+        body.dark-mode {
+            background-color: #333;
+            color: #fff;
+        }
+
+        body.dark-mode header {
+            background-color: #222;
+        }
+
+        body.dark-mode header a {
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="program.html">Programs</a>
+            <a href="faculty.html">Faculty</a>
+            <a href="admission.html">Admissions</a>
+            <a href="#news">Upcoming Event</a>
+            <a href="#about">About Us</a>
+        </div>
+        <button id="mode-toggle">
+            <i id="mode-icon" class="fas fa-sun"></i>
+        </button>
+    </header>
+    <main>
+        <!-- Your content goes here -->
+    </main>
+    <footer>
+        <p>Copyright &copy; 2024 Your Website</p>
+    </footer>
+    <script>
+        const modeToggle = document.getElementById('mode-toggle');
+        const body = document.body;
+        const modeIcon = document.getElementById('mode-icon');
+
+        // Check for user's preference in local storage
+        document.addEventListener('DOMContentLoaded', () => {
+            const isDarkMode = localStorage.getItem('dark-mode');
+            if (isDarkMode === 'true') {
+                body.classList.add('dark-mode');
+                modeIcon.classList.replace('fa-sun', 'fa-moon');
+            }
+        });
+
+        // Toggle between light and dark mode
+        modeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            if (body.classList.contains('dark-mode')) {
+                modeIcon.classList.replace('fa-sun', 'fa-moon');
+                localStorage.setItem('dark-mode', 'true');
+            } else {
+                modeIcon.classList.replace('fa-moon', 'fa-sun');
+                localStorage.setItem('dark-mode', 'false');
+            }
+        });
+    </script>
+</body>
+</html>
