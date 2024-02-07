@@ -985,14 +985,9 @@ color: #ffffff;
     padding: 55px 1px 5px 118px;
   }
   .contact-body-right{
-    height: auto;
-    float: right;
+  float:right;
   }
-  .contact-img{
-    height: auto;
-    width: auto;
-  
-  }
+ 
   .contact-body-left h1{
     color:#084d52;
   }
