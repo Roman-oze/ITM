@@ -7,24 +7,73 @@
 body {
   background-color: #f5f5f5;
   color: #333;
-  transition: background-color 0.3s ease, color 0.3s ease;
   font-family: Arial, Helvetica, sans-serif;
 }
-
 header {
-  background-color: #fff;
-  color: #333;
-  padding: 20px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+  padding: 20px 20px;
+  color: white;
+  border-bottom: 2px solid black;
 }
 
-header a {
-  text-decoration: none;
-  color: #333;
-  margin-right: 20px;
+/* Style for the header left side */
+.header-left img {
+  width: 60px; /* Adjust the width as needed */
+  height: auto;
 }
+
+/* Style for the header right side */
+.header-right ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header-right ul li {
+  display: inline-block;
+  margin-left: 20px;
+  padding: 5px;
+}
+
+.header-right ul li:first-child {
+  margin-left: 0;
+}
+
+.header-right ul li a {
+  font-weight: bold;
+  /* color: rgb(175, 199, 187); */
+  color:#181717;
+  text-align: center;
+  text-decoration: none;
+  padding: 5px;
+}
+.header-right ul li a:hover{
+
+  color:#f0b208;
+  border-bottom: 2px solid #f0b208;
+  padding: 5px;
+
+}
+/* Media query for responsive design */
+@media screen and (max-width: 768px) {
+  header {
+      flex-direction: column;
+      align-items: center;
+      padding: 10px;
+  }
+
+  .header-left {
+      margin-bottom: 10px;
+  }
+
+  .header-right ul li {
+      display: block;
+      margin: 10px 0;
+  }
+}
+
 
 /* Dark mode styles */
 body.dark-mode {
@@ -52,22 +101,49 @@ color: rgb(0, 0, 0);
   background-image:linear-gradient(rgba(35, 190, 157, 0.698),rgba(26, 60, 155, 0.973) );
  height:85vh;
 }
-.row1{
-  display:-ms-flexbox; /* IE10 */
+.dropbtn {
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {  background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+ /* .row1{
+  display:-ms-flexbox;
   display: flex;
   height: 90px;
-  /* background-color: #0c4b52; */
   border-bottom: 3px solid #0a0a0a;
-  /* background-color: rgb(3, 32, 66); */
 }
 .logoimg{
     height:auto;
 
 }
-.pf{
-    height: 100%;
-    width: 100%;
-}
+
 .navbar{
   display: flex;
   flex-direction: row;
@@ -76,7 +152,6 @@ color: rgb(0, 0, 0);
 }
 .navbar a {
   font-weight: bold;
-  /* color: rgb(175, 199, 187); */
   color: #1e1e1fe1;
   text-align: center;
   padding: 14px 20px;
@@ -88,7 +163,7 @@ color: rgb(0, 0, 0);
   color: rgb(15, 143, 248);
   border-bottom:3px solid rgb(43, 41, 41);
   border-width: auto;
-} */
+}  */ 
 
 .left{
   color: #ec5f6f;
@@ -141,11 +216,10 @@ padding-left: 20px;
 }
 .btnn{
 
-    background-color: rgb(238, 11, 60);
+    background-color: rgba(231, 15, 44, 0.918);
     color:rgb(255, 255, 255);
     border-radius: 24px;
-    height: 40px;
-    width: 70px;
+    padding: 10px 20px;
     font-weight: bold;
     border: none;
 
@@ -169,8 +243,8 @@ btn */
     position: relative;
     z-index: 0;
     border-radius: 24px;
-    height: 80px;
-    width: 150px;
+    height: auto;
+    width: auto;
     text-decoration: none;
     font-size: large;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -349,7 +423,7 @@ border-bottom-left-radius: 35px;
 } */
 
 .itleft{
-  background-image:linear-gradient(rgba(233, 200, 200, 0.5),#0f6669d3),url("/model/diugate.jpg");
+  background-image:linear-gradient(rgba(165, 155, 155, 0.589),#0f6669d0),url("/model/diugate.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -358,11 +432,11 @@ border-bottom-left-radius: 35px;
   display: block;
   margin: auto;
 }
-.apply{
+/* .apply{
   display: block;
   margin: auto;
   text-align: center; 
-}
+} */
 .first{
   display: flex;
   flex-direction: row;
@@ -607,6 +681,7 @@ mix-blend-mode: color-burn;
   background-position: center;
 
 }
+
 .item1{
   width: 200px;
   display: block;

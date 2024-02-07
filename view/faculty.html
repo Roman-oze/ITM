@@ -3,16 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>  
   <style>
     /* Add your custom styles here */
     body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #bbafaf;
+            background-image:linear-gradient(rgb(13, 148, 153),#0f2469d0)        
             
         }
-    .card {
+    .card-body{
       margin-bottom: 20px;
+      padding: 15px;
+      /* background-image:linear-gradient(rgba(13, 148, 153, 0.589),#0f2469fd)         */
+      background-color: #3498db;
     }
 
     .circular-image {
@@ -22,12 +27,7 @@
       height: 130px; /* Adjust the size as needed */
     }
 
-    .circular-image img {
-      width: 100%;
-      height: auto;
-      /* border: 2px solid rgb(20, 194, 218); */
-      border: 100%;
-    }
+   
 
     .card:hover {
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -78,7 +78,7 @@
         .faculty-card img {
          width: 100%;
         height: 100%;
-        object-fit: cover;
+        object-fit: contain;
         }
 
         .faculty-card-content {
@@ -115,18 +115,33 @@
         font-family: Georgia, 'Times New Roman', Times, serif;
         border-radius: 10px;
         }
+        .icon{
+          font-size:x-large;
+          color: rgb(255, 255, 255);
+
+        }
+        .icon:hover{
+          font-size:x-large;
+          color: rgb(0, 0, 0);
+        }
+        .icon1{
+          font-size:x-large;
+          color: rgb(12, 145, 235);
+
+        }
+        .icon1:hover{
+          font-size:x-large;
+          color: rgb(15, 31, 247);
+        }
   </style>
   <title>Card Layout</title>
 </head>
 <body>
-<br>
-<br>
-<br>
+
 <div class="d-block m-auto text-center">
 <h1 style="color: brown;"> Faculty</h1>
 <button class="bg-danger text-white"><h2>Information Techonology & Management</h2></button>
 </div>
-<br>
 <br>
 <br>
 
@@ -140,16 +155,16 @@
                 <div class="head"><p> Head of ITM  Department</p></div>
                 <h2>Ms. Nusrat Jahan</h2>
                 <h5>Assistant Professor </h5>
-                <b><p>Email: <a href="nusrat.swe@diu.edu.bd">nusrat.swe@diu.edu.bd</a></p></b>
-                <p>Phone:+8801847334996</p>
-    
+                <a href="https://www.facebook.com/momo.nusrat"><i class="fa-brands fa-facebook icon1"></i></a>
+                <a href="https://www.facebook.com/momo.nusrat"><i class="fa-brands fa-linkedin icon1"></i></a>
+                <a href="nusrat.swe@diu.edu.bd"><i class="fa-solid fa-envelope icon1"></i></a>
+                <a href="+8801847334996"><i class="fa-solid fa-square-phone icon1"></i></a>
+                
             </div>
         </div>
       </div>
     </div>
     <br>
-<br>
-<br>
 
     <!-- Second Line: Three Cards -->
     <div class="row">
@@ -159,10 +174,13 @@
             <img src="/model/teacher/ashik.jpg" class="card-img-top" alt="Circular Image">          </div>
           <div class="card-body">
             <!-- Content for the first card in the second line -->
-            <h3>Dr.Ashikur Rahman</h3>
-                <h4>Lecturer (Senior Scale) </h4>
-                <p>Email: <a href="ashikur.itm@diu.edu.bd">ashikur.itm@diu.edu.bd</a></p>
-                <p>Phone:01312075927</p>
+            <h3 >Dr.Ashikur Rahman</h3>
+                <h4 >Lecturer (Senior Scale) </h4>
+                <!-- <p>Email: <a href="ashikur.itm@diu.edu.bd">ashikur.itm@diu.edu.bd</a></p> -->
+                 <a href="https://www.facebook.com/ashik.rahman.370515"><i class="fa-brands fa-facebook icon"></i></a>
+                <a href="https://www.facebook.com/ashik.rahman.370515"><i class="fa-brands fa-linkedin icon"></i></a>
+                <a href="ashikur.itm@diu.edu.bd"><i class="fa-solid fa-envelope icon"></i></a>
+                <a href="01312075927"><i class="fa-solid fa-square-phone icon"></i></a>
           </div>
         </div>
       </div>
@@ -176,8 +194,10 @@
             <!-- Content for the second card in the second line -->
             <h3>Mr. Nafees Imran</h3>
                 <h4>Lecturer </h4>
-                <p>Email: <a href="nafees.itm@diu.edu.bd">nafees.itm@diu.edu.bd</a></p>
-                <p>Phone:01880829404</p>
+                <a href="https://www.facebook.com/nafees.imran.7"><i class="fa-brands fa-facebook icon"></i></a>
+                <a href="https://www.facebook.com/nafees.imran.7"><i class="fa-brands fa-linkedin icon"></i></a>
+                <a href="nafees.itm@diu.edu.bd"><i class="fa-solid fa-envelope icon"></i></a>
+                <a href="01880829404"><i class="fa-solid fa-square-phone icon"></i></a>
           </div>
         </div>
       </div>
@@ -191,8 +211,10 @@
             <!-- Content for the third card in the second line -->
             <h3>Raisul Kabir News</h3>
             <h4>Lecturer</h4>
-            <p>Email:<a href="raisul.itm0007.c@diu.edu.bd">raisul.itm0007.c@diu.edu.bd</a></p>
-            <p>Phone:01402052440</p>
+                <a href="https://www.facebook.com/raisul.kabir.31"><i class="fa-brands fa-facebook icon"></i></a>
+                <a href="https://www.facebook.com/raisul.kabir.31"><i class="fa-brands fa-linkedin icon"></i></a>
+                <a href="raisul.itm0007.c@diu.edu.bd"><i class="fa-solid fa-envelope icon"></i></a>
+                <a href="01402052440"><i class="fa-solid fa-square-phone icon"></i></a>
           </div>
         </div>
       </div>
@@ -210,9 +232,11 @@
             <div class="card-body">
               <!-- Content for the first card in the second line -->
               <h3>Ms. Moni Akter</h3>
-                  <h4>Lecturer</h4>
-                  <p>Email: <a href="akter.itm@diu.edu.bd">akter.itm@diu.edu.bd</a></p>
-                  <p>Phone:+8801***********</p>
+                  <h4>Lecturer</h4>    
+                <a href="#"><i class="fa-brands fa-facebook icon"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin icon"></i></a>
+                <a href="akter.itm@diu.edu.bd"><i class="fa-solid fa-envelope icon"></i></a>
+                <a href="8801617378602"><i class="fa-solid fa-square-phone icon"></i></a>
             </div>
           </div>
         </div>
@@ -226,8 +250,11 @@
               <!-- Content for the second card in the second line -->
               <h3>Name :</h3>
                   <h4>Designation</h4>
-                  <p>Email: <a href="name.itm@diu.edu.bd">name.itm@diu.edu.bd</a></p>
-                  <p>Phone:+8801***********</p>
+                  
+                <a href="#"><i class="fa-brands fa-facebook icon"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin icon"></i></a>
+                <a href="#"><i class="fa-solid fa-envelope icon"></i></a>
+                <a href="#"><i class="fa-solid fa-square-phone icon"></i></a>
             </div>
           </div>
         </div>
@@ -241,8 +268,11 @@
               <!-- Content for the third card in the second line -->
               <h3>Name :</h3>
                   <h4>Designation</h4>
-                  <p>Email: <a href="name.itm@diu.edu.bd">name.itm@diu.edu.bd</a></p>
-                  <p>Phone:+8801***********</p>
+                 
+                <a href="#"><i class="fa-brands fa-facebook icon"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin icon"></i></a>
+                <a href="#"><i class="fa-solid fa-envelope icon"></i></a>
+                <a href="#"><i class="fa-solid fa-square-phone icon"></i></a>
             </div>
           </div>
         </div>

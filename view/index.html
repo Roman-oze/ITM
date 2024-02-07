@@ -12,7 +12,7 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container-fluid ">
+    <!-- <div class="container-fluid ">
         <div class="row1 ">
             <div class=" col-md-1 logoimg">
                 <img src="/model/IT3.PNG" class="pf ">
@@ -22,8 +22,14 @@
                 <a href="index.html">Home</a>
                 <a href="program.html">Programs</a>
                 <a href="faculty.html">Faculty</a>
-                <a href="routine.html">Routine</a>
-                <a href="#news">Upcoming Event</a>
+                <div class="dropdown">
+                    <a href="faculty.html">Routine</a>
+                        <div class="dropdown-content">
+                      <a href="/model/ITM-Spring-2024-Routine.pdf">Spring-2024</a>
+                      <a href="/model/ITM-Spring-2024-Routine.pdf">Fall-2023</a>
+                    </div>
+                  </div>
+                <a href="events.html">Upcoming Event</a>
                 <a href="#about">About Us</a>
             </div>
 
@@ -37,8 +43,37 @@
                 </button>
                 </div>
         </div>
+    </div> -->
+    <header>
+    <div class="header-left">
+        <img src="/model/IT3.PNG" > 
     </div>
+      <nav class="header-right">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li> <a href="program.html">Programs</a></li>
+            <li><a href="faculty.html">Faculty</a></li>
+            <li><a href="#">Upcoming Events</a></li>
+            <li><div class="dropdown">
+                <a href="faculty.html">Routine</a>
+                    <div class="dropdown-content">
+                        <a href="/model/ITM-Spring-2024-Routine.pdf">Spring-2024</a>
+                        <a href="/model/ITM-Spring-2024-Routine.pdf">Fall-2023</a>
+                    </div>
+            </li>
+            <li><a href="#about">About Us</a></li>
+            <li> <div class="apply">
+                <a class="bn50 p-3 text-warning " href="https://pd.daffodilvarsity.edu.bd/admission/online">Apply</a>
+            </div></li>
+            <li> <div class=" col-md-1 t-center apply">
+                <button id="mode-toggle">
+                    <i id="mode-icon" class="fas fa-sun"></i>
+                </button>
+                </div></li>
 
+        </ul>
+      </nav>
+    </header>
 
 
 <div class="container-fluid ">
@@ -200,7 +235,7 @@
         <div class="col-md-7 p-5 itleft text-center " >
                    <img src="/model/qr.png" class="qr">
                    <br>
-                    <p style=" font-size: larger; color: aliceblue;">Department of Information Technology and Management (ITM) provides you a unique opportunity to have BSc. in Information Technology and Management. In the field of Information Technology and Management, the job possibilities are almost endless. "The major goal of the discipline, which is now unique in our nation, is to integrate information technology with business intelligence. We also intend to secure financial systems on cloud...<p>
+                    <p style=" font-size: larger; color: rgb(255, 255, 255);">Department of Information Technology and Management (ITM) provides you a unique opportunity to have BSc. in Information Technology and Management. In the field of Information Technology and Management, the job possibilities are almost endless. "The major goal of the discipline, which is now unique in our nation, is to integrate information technology with business intelligence. We also intend to secure financial systems on cloud...<p>
                        <br>
                       <br>
                        <button class="read "><a class="menucard" href="https://daffodilvarsity.edu.bd/images/prospectus/BSc-in-ITM.jpg">Program List<i class="fa-solid fa-download"></i></a></i></button> 
@@ -361,8 +396,8 @@
 
                    </div>
                </div>
-               <br>
-               <div class="container-fluid">
+            
+               <div class="container-fluid fourbg ">
                 <div class="row text-center">
                      <div class="col-md-3 ">
                          <img src="/model/java.png" class="imgslide transition">
@@ -380,7 +415,7 @@
                  </div>
              </div>
              </div>
-               <br>
+               
                <!-- <div class="container-fluid ">
                    <div class="row  text-center d-flex justify-content-center">
 
@@ -548,7 +583,7 @@
               </div>
               <div class="contact-body facilty">
               
-                <iv class="contact-body-left">
+                <div class="contact-body-left">
                  
                   <h1 >Contact me</h1>
                   <span>Address</span>
@@ -564,7 +599,7 @@
                    <a href="//www.instagram.com/rumu303" class="fa fa-instagram instaicon"></a>
            
            
-                </iv>
+                </div>
                 <div class=" contact-body-right text-center">
                  <img class="contact-img" src="/model/itmclub.png" alt="">
                 </div>
@@ -625,17 +660,7 @@ const modeToggle = document.getElementById('mode-toggle');
   
     // Start the typing animation
     typeText(0);
-  </script>
-
-
-
-
-
-
-
-
-
- <script>
+  
   var i = 0;
   
   var txt = 'Im sincere,responsible,dedicate,straight forward person.I believe in connectivity because connectivity is producativity.Always i try to encourage every people confidance is my power.Im 23 years old.I was born in Brahmanbaria.I grew up in Dhaka.My school was B-Baria then i completed my HSC from Dhanmondi Ideal collage.Afterthat i went china for study then .I did completed my 2 years study .Afterworth i came bangladesh in vaccation thats time i didnt go there .Then i took decision  to admit in Daffodil Internation University department of ITM.Now im gonna say about my family.My father Businessman & Mother is housewife.We are four brother mah first brother is Softoware engineer & second brother aboard then me last but not least 4th brother doing study in class 7.So that was me and my whole family Introduction';
@@ -652,7 +677,6 @@ const modeToggle = document.getElementById('mode-toggle');
     }
   }
   </script>
-  <a href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+ 
 </body>
 </html>
