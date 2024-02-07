@@ -981,13 +981,11 @@ color: #ffffff;
   }
   .contact-body-left{
     height: auto;
-    width: 30%;
     float: left;
     padding: 55px 1px 5px 118px;
   }
   .contact-body-right{
     height: auto;
-    width: 70%;
     float: right;
   }
   .contact-img{
@@ -1016,4 +1014,13 @@ color: #ffffff;
     height: 50%;
     width: 100px;
     color: rgb(187, 30, 30);
+  }
+  .icon{
+    font-size:x-large;
+    color: rgb(0, 0, 0);
+
+  }
+  .icon:hover{
+    font-size:x-large;
+    color: rgb(255, 255, 255);
   }
