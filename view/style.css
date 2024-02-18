@@ -564,6 +564,18 @@ color: #ffffff;
   transform: scale(1.05);
 
 }
+.img-fluid1{
+  width: 100%;
+  aspect-ratio: 3/2;
+  object-fit: contain;
+  transition: transform 0.4s;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+}
+.img-fluid1:hover{
+  transform: scale(1.05);
+
+}
 
 .pop{
   padding-top: 10px;
