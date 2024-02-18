@@ -16,6 +16,7 @@ header {
   padding: 20px 20px;
   color: white;
   border-bottom: 2px solid black;
+
 }
 
 /* Style for the header left side */
@@ -139,10 +140,10 @@ color: rgb(0, 0, 0);
   height: 90px;
   border-bottom: 3px solid #0a0a0a;
 }
-.logoimg{
+/* .logoimg{
     height:auto;
 
-}
+} */
 
 .navbar{
   display: flex;
