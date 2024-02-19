@@ -10,7 +10,40 @@ body {
 .welcome-section h1, .about-section h2 {
   color: #007bff;
 }
-.iconImage{
+
+/* Style for the header right side */
+
+
+ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bolder;
+
+}
+ul li a:hover{
+  transition: all;
+  color: rgb(236, 111, 8);
+  border-bottom: 2px solid rgb(255, 255, 255);
+  font-weight: bolder;
+
+  padding: 10px;
+}
+@media screen and (max-width: 768px) {
+  header {
+      flex-direction: column;
+      align-items: center;
+      padding: 5px;
+  }
+  ul li {
+      display: block;
+      margin: 10px 0;
+  }
+}
+.logo{
+  height: 60px;
+  width: 60px;
+}
+.QR{
   height: 80px;
   width: 80px;
 }
@@ -22,8 +55,10 @@ body {
   background-image:linear-gradient(rgba(13, 148, 153, 0.589),#0f2469fd)     ;   
   padding: 10px;
   font-weight: bold;
+
   }
   .link:hover{
+    
   border: 3px solid rgb(253, 253, 253);
   border-radius: 24px;
   background-image:linear-gradient(rgba(13, 148, 153, 0.589),#0f2469fd)     ;   
@@ -33,110 +68,162 @@ body {
   padding: 10px;
   
   }
-  ul li a {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    font-weight: bolder;
-   
-  }
- ul li a:hover{
-    transition: all;
-    color: white;
-    border-bottom:2px solid rgb(243, 134, 10);
-    padding: 10px;
-  }
+
   .bgphoto{
-    background-image:url("/model/slidebg.png");
+    background-image:url("/model/event_photo/orient.jpg");
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: 70vh;
+  }
+  .bgcolorpic{
+    background-image:linear-gradient(rgba(5, 20, 107, 0.329),#145ee78e),url("/model/event_photo/orient.jpg");
+  background-size: cover;
+  background-position: center;
+ 
+    height: 70vh;
   }
   .bgcolor{
-    background-image:linear-gradient(rgba(226, 220, 220, 0.589),#4eced3d0);
+    background-image:linear-gradient(rgba(12, 98, 226, 0.801),#4eced3d0);
+ padding: 10px 10px;
+  }
+  .welcome{
+    display: block;
+    margin: auto;
+    text-align: center;
+    padding-top: 0;
+  }
+  .welcomept{
+    width: 350px;
+  
+  }
+   .btnn{
+  border:1px solid black;
+  border-radius: 24px;
+  padding:auto;
+  width: 50%;
+  display: block;
+  margin: auto;
+  font-weight:bold;
+  }
+  
+  .paragh{
+  padding: 50px;
+  text-align: center;
+  }
+  .clubhead{
+  text-align: center;
+  background-color: #000000;
+  height: 50px;
+  }
+  .fa-download{
+  font-size: 20px;
+  padding: 10px;
+  color: #0658d3;
+  }
+  
+  .face{
+  text-decoration: none;
+  border-radius: 24px;
+  background-color: blue;
+  padding: 10px;
+  font-weight: bold;
+  color: #ddd;
+  transition: transform 0.3s;
+  margin-right: 5px;
 
   }
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
+ 
+  .face:hover{
+    text-decoration: none;
+  color: rgb(0, 0, 0);
   font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
-}
+  transform: scale(1.05);
+  }
+  .tube{
+  text-decoration: none;
+  border-radius: 24px;
+  background-color: rgb(255, 0, 0);
+  color: #ffffff;
+  padding: 10px;
+  font-weight: bold;
+  transition: transform 0.3s;
+  margin-left: 5px;
+  }
+  .tube:hover{
+    text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  transform: scale(1.05);
+  }
+  .clubtxt{
+  font-size: 36px;
+  color:white;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  .container {
+  
+    margin: 20px auto;
+    padding: 0 20px;
+  }
+  .header, .footer {
+    background-color: #0e6ba1;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+  
+  }
+  .heading{
+    background-color: #f4f4f4;
+    color: #0e6ba1;
+    border: #f4f4f4;
+    border-radius: 24px;
+    width: 40%;
+    display: block;
+    margin: auto;
+  }
+  .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .event-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 350px;
+    width: 100%;
+  }
+  .event-card h2 {
+    font-size: 1.5em;
+    margin-top: 0;
+  }
+  .event-card p {
+    font-size: 1em;
+    color: #504d4d;
+  }
+  .event-card .button {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+  }
+  .event-card .button:hover {
+    background-color: #0056b3;
+  }
+  .carousel-img {
+    width: 80%; /* Adjust the width as needed */
+    height: auto;
+    margin: auto; /* Centers the images horizontally */
+    position: relative; /* Required for absolute positioning of the gradient */
+  }
+  
