@@ -83,7 +83,7 @@ ul li a:hover{
     height: 70vh;
   }
   .bgcolor{
-    background-image:linear-gradient(rgba(12, 98, 226, 0.801),#4eced3d0);
+    background-image:linear-gradient(rgb(12, 98, 226),#4eced3);
  padding: 10px 10px;
   }
   .welcome{
