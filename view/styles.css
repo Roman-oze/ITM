@@ -227,3 +227,16 @@ ul li a:hover{
     position: relative; /* Required for absolute positioning of the gradient */
   }
   
+.h1border{
+  width: 60%;
+  display: block;
+  margin: auto;
+  background-color: rgba(81, 212, 235, 0.719);
+
+}
+.pborder{
+  width: 40%;
+  display: block;
+  margin: auto;
+  background-color: rgba(206, 221, 230, 0.719);
+}
