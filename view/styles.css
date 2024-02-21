@@ -13,20 +13,20 @@ body {
 
 /* Style for the header right side */
 
-
-ul li a {
+ ul li a {
   text-decoration: none;
-  color: white;
+  color: rgb(255, 255, 255);
   font-weight: bolder;
-
-}
-ul li a:hover{
-  transition: all;
-  color: rgb(236, 111, 8);
-  border-bottom: 2px solid rgb(255, 255, 255);
-  font-weight: bolder;
-
   padding: 10px;
+ 
+}
+ ul li a:hover{
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 24px;
+  padding: 10px;
+
 }
 @media screen and (max-width: 768px) {
   header {
@@ -36,7 +36,8 @@ ul li a:hover{
   }
   ul li {
       display: block;
-      margin: 10px 0;
+      margin: auto;
+      padding: 10px;
   }
 }
 .logo{
@@ -232,6 +233,8 @@ ul li a:hover{
   display: block;
   margin: auto;
   background-color: rgba(81, 212, 235, 0.719);
+  border-radius: 24px;
+
 
 }
 .pborder{
@@ -239,4 +242,14 @@ ul li a:hover{
   display: block;
   margin: auto;
   background-color: rgba(206, 221, 230, 0.719);
+  border-radius: 24px;
+}
+
+.img-fluid{
+  height: 300px;
+  width: 400px;
+}
+.img00{
+  height: 200px;
+  width: 300px;
 }

@@ -85,7 +85,7 @@ body.dark-mode {
 body.dark-mode header {
   background-color: #222;
 }
-body.dark-mode p{
+body.dark-mode p h1 h2 h3 h4 h5{
   color: white;
 }
 body.dark-mode header a {
@@ -173,10 +173,7 @@ color: rgb(0, 0, 0);
 }
 .profile_image{
   height: 400px;
-  width: auto;
-  padding-top: 50px;
-
-  
+  width: auto; 
 }
 .verify{
   height: 35px;
