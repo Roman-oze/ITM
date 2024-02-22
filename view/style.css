@@ -9,70 +9,9 @@ body {
   color: #333;
   font-family: Arial, Helvetica, sans-serif;
 }
-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px 20px;
-  color: white;
-  border-bottom: 2px solid black;
-
-}
-
-/* Style for the header left side */
-.header-left img {
-  width: 60px; /* Adjust the width as needed */
-  height: auto;
-}
-
-/* Style for the header right side */
-.header-right ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.header-right ul li {
-  display: inline-block;
-  margin-left: 20px;
-  padding: 5px;
-}
-
-.header-right ul li:first-child {
-  margin-left: 0;
-}
-
-.header-right ul li a {
-  font-weight: bold;
-  /* color: rgb(175, 199, 187); */
-  color:#181717;
-  text-align: center;
-  text-decoration: none;
-  padding: 5px;
-}
-.header-right ul li a:hover{
-
-  color:#f0b208;
-  border-bottom: 2px solid #f0b208;
-  padding: 5px;
-
-}
-/* Media query for responsive design */
-@media screen and (max-width: 768px) {
-  header {
-      flex-direction: column;
-      align-items: center;
-      padding: 10px;
-  }
-
-  .header-left {
-      margin-bottom: 10px;
-  }
-
-  .header-right ul li {
-      display: block;
-      margin: 10px 0;
-  }
+.pf{
+  height: 60px;
+  width: 75px;
 }
 
 
@@ -85,7 +24,7 @@ body.dark-mode {
 body.dark-mode header {
   background-color: #222;
 }
-body.dark-mode p h1 h2 h3 h4 h5{
+body.dark-mode p li{
   color: white;
 }
 body.dark-mode header a {
@@ -98,10 +37,7 @@ color: rgb(0, 0, 0);
   border-radius:50% ;
   border: 1px double  black;
 }
-.covepage{
-  background-image:linear-gradient(rgba(35, 190, 157, 0.698),rgba(26, 60, 155, 0.973) );
- height:85vh;
-}
+
 .dropbtn {
   color: white;
   padding: 16px;
@@ -145,15 +81,9 @@ color: rgb(0, 0, 0);
 
 } */
 
-.navbar{
-  display: flex;
-  flex-direction: row;
-  justify-content: end;
-  align-content: center;
-}
 .navbar a {
   font-weight: bold;
-  color: #1e1e1fe1;
+  color: #000000e1;
   text-align: center;
   padding: 14px 20px;
   text-decoration: none;
@@ -161,21 +91,12 @@ color: rgb(0, 0, 0);
 }
 .navbar a:hover {
   font-weight: bold;
-  color: rgb(15, 143, 248);
-  border-bottom:3px solid rgb(43, 41, 41);
+  color: rgb(243, 8, 86);
+  border-bottom:3px solid rgb(0, 0, 0);
   border-width: auto;
 }  */ 
 
-
-.right{
-  text-align: center;
- 
-}
-.profile_image{
-  height: 400px;
-  width: auto; 
-}
-.verify{
+img.verify{
   height: 35px;
   width: 35px;
   margin-left: 5px;
@@ -203,9 +124,7 @@ p{
   
  
 }
-.club{
-padding-left: 20px;
-}
+
 .btnn{
 
     background-color: rgba(231, 15, 44, 0.918);
@@ -293,6 +212,7 @@ btn */
   
   .bn5:hover:before {
     opacity: 1;
+
   }
   
   .bn5:after {
@@ -306,11 +226,9 @@ btn */
     top: 0;
     border-radius: 24px;
   }
+
+
 .bn50 {
-padding-left: 20px;
-padding-right: 20px;
-padding-top: 15px;
-padding-bottom: 15px;
 border-top-right-radius: 35px;
 border-bottom-left-radius: 35px;
 
@@ -326,7 +244,7 @@ border-bottom-left-radius: 35px;
     font-size: large;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   }
-  
+
   .bn50:before {
     content: "";
     background: linear-gradient(
@@ -515,6 +433,32 @@ color: #ffffff;
   margin-bottom: 10px;
 
 }
+/* For desktop screens */
+@media only screen and (min-width: 768px) {
+  .fe-box {
+      width: 25%; /* Arrange items in a grid with 4 columns */
+      padding: 0 15px;
+  }
+}
+
+/* For smaller screens */
+@media only screen and (max-width: 767px) {
+  .fe-box {
+      width: 50%; /* Arrange items in a grid with 2 columns */
+      float: left;
+      padding: 0 15px;
+  }
+}
+
+/* For very small screens */
+@media only screen and (max-width: 480px) {
+  .fe-box {
+      width: 100%; /* Occupy full width */
+      float: none;
+      padding: 0 0 15px 0;
+      text-align: center;
+  }
+}
 
 .facility{
   background-color: #02556e;
@@ -684,6 +628,11 @@ mix-blend-mode: color-burn;
   background-size: cover;
   background-position: center;
 
+}
+.scholarpic{
+  height: 100%;
+  width: auto;
+object-position: center;
 }
 
 .item1{
@@ -999,10 +948,7 @@ color: #ffffff;
     float: left;
     padding: 55px 1px 5px 118px;
   }
-  .contact-body-right{
-  float:right;
-  }
- 
+  
   .contact-body-left h1{
     color:#084d52;
   }
@@ -1040,3 +986,23 @@ color: #ffffff;
     height:20vh;
     width: 100%;
   }
+  .images{
+    height: 250px;
+    width: 450px;
+  }
+  .images2{
+    height: 400px;
+    width: 370px;
+  }
+  .covepage{
+    background-image:url("/model/callbg.png");
+    background-size: cover;
+    background-position: center;
+    border-top: 2px solid rgb(37, 37, 37);
+    height: 100%;
+  }
+  .club{
+    margin-left: 25px;
+    padding-top: 70px;
+  }
+ 
